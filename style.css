@@ -137,4 +137,86 @@ blockquote{
   padding-left: 1em;
   margin: 1em 0;
 }
+/* ===== Simple Project Gallery ===== */
+/* I’m keeping this tiny and neutral so it matches my current site. */
+
+.wrap { max-width: 1000px; margin: 0 auto; padding: 1rem; } /* ok if I already have .wrap; this is gentle */
+
+.gallery {
+  /* simple responsive grid — nothing fancy */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-block: 1rem 2rem; /* simple top/bottom spacing */
+}
+
+.card {
+  /* basic, unobtrusive card */
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.02); /* nearly transparent so it works on light or dark themes */
+  overflow: hidden;
+}
+
+.thumb {
+  /* fixed aspect so layout doesn’t jump when images load */
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  background: #e9ecef; /* soft gray for placeholder */
+  display: block;
+}
+
+/* When I replace .placeholder with an <img>, these keep images tidy */
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Simple caption area */
+.card > figcaption {
+  padding: 0.75rem 0.9rem 1rem;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.25rem;
+}
+
+.card-desc {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.card-purpose {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Optional video block (if/when I add it) */
+.video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Screen-reader only helper I can reuse anywhere */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 
