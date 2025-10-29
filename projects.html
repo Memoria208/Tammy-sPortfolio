@@ -39,20 +39,87 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
 <nav>
   <a href="index.html">Home</a> 
   <a href="about.html">About</a> 
-  <a href="projects.html" class="active">Projects</a> 
+  <a href="projects.html" class="active" aria-current="page">Projects</a> 
   <a href="contact.html">Contact</a>
 </nav>
 
-<h1>Projects</h1>
-<div class="panel">
-  <h2 class="small-caps">Project 1</h2>
-  <p>This is where I'll put my favorite project.</p>
-</div>
+<main class="wrap">
+    <h1>Projects</h1>
+    <p class="note-small">
+      <!-- I want a simple gallery that I can fill in later without breaking anything. -->
+      A simple, starter gallery. These are fake projects I've added for examples. I’ll swap placeholders with real screenshots as I finish work.
+    </p>
 
-<div class="panel">
-  <h2 class="small-caps">Project 2</h2>
-  <p>This is where I'll put a project that best shows off my skillset.</p>
-</div>
+    <!-- Gallery: super basic grid of cards -->
+    <section class="gallery" aria-label="Project gallery">
+      
+      <!-- Card 1 -->
+      <figure class="card">
+        <div class="thumb placeholder" role="img" aria-label="Placeholder thumbnail for future project">
+          <!-- When I have a real image: replace this div with an <img> like below -->
+          <!-- <img src="images/project-login.jpg" alt="Screenshot of my privacy-first login flow" loading="lazy" width="1200" height="750"> -->
+        </div>
+        <figcaption>
+          <h2 class="card-title">Privacy-First Login Flow</h2>
+          <p class="card-caption">
+  This project focuses on making sign-in screens simple, secure, and welcoming.
+  I wanted to prove that accessibility and usability can go hand-in-hand with good security practices.
+</p>
+
+
+          <p class="card-purpose">Purpose: show usability thinking + accessibility basics.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Card 2 -->
+      <figure class="card">
+        <div class="thumb placeholder" role="img" aria-label="Placeholder thumbnail for future project">
+          <!-- Later: <img src="images/project-responsive.jpg" alt="Mobile view of my responsive layout" loading="lazy" width="1200" height="750"> -->
+        </div>
+        <figcaption>
+          <h2 class="card-title">Responsive Portfolio Layout</h2>
+          <p class="card-caption">
+  A clean, flexible layout that adjusts smoothly between desktop and mobile.
+  I designed this to stay fast, readable, and consistent no matter the screen size.
+</p>
+
+          <p class="card-purpose">Purpose: demonstrate responsive design fundamentals.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Card 3 -->
+      <figure class="card">
+        <div class="thumb placeholder" role="img" aria-label="Placeholder thumbnail for future project">
+          <!-- Later: <img src="images/project-notes-api.jpg" alt="Diagram of my Notes API endpoints" loading="lazy" width="1200" height="750"> -->
+        </div>
+        <figcaption>
+          <h2 class="card-title">Notes API (Java + Spring)</h2>
+          <p class="card-caption">
+  A simple CRUD API for organizing notes, built in Java with Spring Boot.
+  I used this project to strengthen my backend fundamentals and documentation habits.
+</p>
+
+          <p class="card-purpose">Purpose: show backend basics + documentation habit.</p>
+        </figcaption>
+      </figure>
+
+    </section>
+
+    <!-- Optional media I can add fast later -->
+    <!--
+    <section aria-label="Optional intro video" class="note-small">
+      <p>When I’m ready: add a 30–60s intro video here.</p>
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Quick intro to my portfolio"
+          width="560" height="315" allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+      <p class="sr-only">Transcript: Short intro to who I am and what I’m building this term.</p>
+    </section>
+    -->
 
 </body>
 </html>
+
