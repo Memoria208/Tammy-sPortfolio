@@ -43,10 +43,24 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
   <a href="contact.html" class="active">Contact</a>
 </nav>
 
-<h1>Contact Me</h1>
-<div class="panel">
-  <p>Email: <a href="tamarathomas@my.cwi.edu">tamarathomas@my.cwi.edu</a></p>
-  <p><a class="button" href="https://linkedin.com">LinkedIn</a>
-     <a class="button" href="https://github.com">GitHub</a></p>
-</div>
+<section id="contact">
+  <h1>Contact Me</h1>
+  <div class="panel">
+   <form id="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+
+    <p id="form-message" aria-live="polite"></p>
+   </form>
+ </section>
+ 
+
 
