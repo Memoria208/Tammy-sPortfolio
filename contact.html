@@ -32,6 +32,23 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
   <!-- External stylesheet (required) -->
   <link rel="stylesheet" href="style.css">
 </head>
+ <script>
+  // Simple "thank you" message without reloading the page
+  const contactForm = document.getElementById("contact-form");
+  const formMessage = document.getElementById("form-message");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // stops the page from reloading
+
+      formMessage.textContent = "Thank you! Your message has been sent.";
+      
+      // Optional: clear the form
+      contactForm.reset();
+    });
+  }
+</script>
+
 <body>
 
 <!-- Requirement: Use two fonts -->
@@ -62,5 +79,6 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
    </form>
  </section>
  
+
 
 
