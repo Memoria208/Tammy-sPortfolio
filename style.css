@@ -417,9 +417,14 @@ blockquote{
 
 .lightbox img {
   width: 100%;
+  max-width: 800px;  /* adjust if you want a different max size */
   height: auto;
+  display: block;
+  margin: auto;
   border-radius: 1rem;
 }
+
+
 
 
 
