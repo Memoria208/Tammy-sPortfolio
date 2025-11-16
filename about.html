@@ -35,11 +35,22 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
 <body>
 
 <nav>
-  <a href="index.html">Home</a> 
-  <a href="about.html" class="active">About</a> 
-  <a href="projects.html">Projects</a> 
+  <a href="index.html" >Home</a> 
+  <a href="about.html" class="active">About Me</a> 
+
+  <div class="nav-dropdown">
+    <button class="nav-dropbtn" type="button">Projects ▾</button>
+    <div class="nav-dropdown-menu">
+      <a href="projects.html#data-analysis">Data Analysis</a>
+      <a href="projects.html#web-dev">Web Development</a>
+      <a href="projects.html#school">Course Projects</a>
+      <a href="projects.html#in-progress">In-Progress</a>
+    </div>
+  </div>
+
   <a href="contact.html">Contact</a>
 </nav>
+
 
  <h1>About Me</h1>
 <div class="panel">
@@ -77,4 +88,5 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
   </ul>
 </div>
 </body>
+
 </html>
