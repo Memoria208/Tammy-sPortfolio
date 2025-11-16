@@ -232,6 +232,7 @@ blockquote{
   display: block;
   margin-bottom: 5px;
   font-weight: 600;
+  color: var(--accent2); /* bright purple/pink */
 }
 
 #contact-form input,
@@ -244,6 +245,12 @@ blockquote{
   font: inherit;
 }
 
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: #888;
+}
+
+
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: 2px solid #66aaff; /* focus state for accessibility */
@@ -254,6 +261,7 @@ blockquote{
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
 
 
 
