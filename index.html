@@ -103,6 +103,22 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
   </blockquote>
 </div>
 
+<script>
+  // Simple lightbox for portrait (Chapter 12)
+  const thumb = document.getElementById("portrait-thumb");
+  const lightbox = document.getElementById("lightbox");
+
+  if (thumb && lightbox) {
+    thumb.addEventListener("click", function () {
+      lightbox.style.display = "block";
+    });
+
+    // Click anywhere on the overlay to close
+    lightbox.addEventListener("click", function () {
+      lightbox.style.display = "none";
+    });
+  }
+</script>
 
 
 </body>
