@@ -319,6 +319,71 @@ blockquote{
   display: block;
 }
 
+/* === Navigation Dropdown === */
+
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Projects button – reuse nav gradient look */
+.nav-dropbtn {
+  background: linear-gradient(90deg, var(--accent2), var(--accent3));
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.nav-dropbtn:hover,
+.nav-dropbtn:focus {
+  background: linear-gradient(90deg, var(--accent3), var(--accent2));
+  color: #fff;
+}
+
+/* Hidden dropdown menu */
+.nav-dropdown-menu {
+  display: none;  /* hidden by default */
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  left: 0;
+
+  background: linear-gradient(135deg, var(--bg-2), var(--bg-3));
+  min-width: 220px;
+  padding: 0.35rem 0.4rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.12);
+  z-index: 99;
+}
+
+/* Links inside dropdown */
+.nav-dropdown-menu a {
+  display: block;
+  background: none;   /* override nav a gradient */
+  padding: 0.45rem 0.8rem;
+  margin: 0.1rem 0;
+  color: var(--text);
+  border-radius: 0.5rem;
+  font-weight: 400;
+}
+
+/* Hover effect for dropdown items */
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus {
+  background: radial-gradient(circle at left, var(--accent3), transparent 70%);
+  color: #fff;
+}
+
+/* Show menu when hovering or focusing the dropdown */
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  display: block;
+}
+
 
 
 
