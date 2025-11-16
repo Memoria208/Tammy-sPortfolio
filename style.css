@@ -291,7 +291,7 @@ blockquote{
 .nav-dropdown-menu {
   display: none;  /* hidden by default */
   position: absolute;
-  top: calc(100% + 0.35rem);
+  top: 100%;
   left: 0;
 
   background: linear-gradient(135deg, var(--bg-2), var(--bg-3));
@@ -326,6 +326,7 @@ blockquote{
 .nav-dropdown:focus-within .nav-dropdown-menu {
   display: block;
 }
+
 
 
 
