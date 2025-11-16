@@ -403,7 +403,11 @@ blockquote{
   inset: 0;
   background: rgba(0,0,0,0.85);
   z-index: 200;
+  overflow-y: auto;   /* 👈 allows vertical scrolling */
+  overflow-x: hidden; /* optional, prevents side scroll bars */
+  padding: 2rem 0;    /* adds space on top/bottom so image looks centered */
 }
+
 
 .lightbox-inner {
   max-width: 90vw;
@@ -416,6 +420,7 @@ blockquote{
   height: auto;
   border-radius: 1rem;
 }
+
 
 
 
