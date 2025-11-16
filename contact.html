@@ -53,12 +53,16 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
 
 <!-- Requirement: Use two fonts -->
 
-<nav>
-  <a href="index.html">Home</a> 
-  <a href="about.html">About</a> 
-  <a href="projects.html">Projects</a> 
-  <a href="contact.html" class="active">Contact</a>
-</nav>
+<div class="nav-dropdown">
+  <a href="projects.html" class="nav-dropbtn">Projects ▾</a>
+  <div class="nav-dropdown-menu">
+    <a href="projects.html#data-analysis">Data Analysis</a>
+    <a href="projects.html#web-dev">Web Development</a>
+    <a href="projects.html#school">Course Projects</a>
+    <a href="projects.html#in-progress">In-Progress</a>
+  </div>
+</div>
+
 
 <section id="contact">
   <h1>Contact Me</h1>
@@ -79,6 +83,7 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
    </form>
  </section>
  
+
 
 
 
