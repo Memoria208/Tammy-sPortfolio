@@ -342,6 +342,39 @@ blockquote{
   transition: transform 0.3s ease;
 }
 
+/* Accordion FAQ (Chapter 12 collapsible sections) */
+.accordion {
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 0.9rem;
+  margin-top: 0.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.accordion:hover,
+.accordion:focus {
+  background: rgba(255,255,255,0.08);
+  outline: none;
+}
+
+.accordion.active {
+  background: rgba(255,255,255,0.12);
+}
+
+.accordion-panel {
+  display: none;
+  padding: 0.4rem 0.9rem 0.7rem;
+  border-left: 2px solid var(--accent3);
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
 
 
 
