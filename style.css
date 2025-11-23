@@ -471,3 +471,25 @@ blockquote{
   white-space: nowrap;
 }
 
+/* Layout for Skills section */
+.lang-ja .skills-hero {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.lang-ja .skills-hero .skills-intro {
+  flex: 1;
+}
+
+/* Layout for FAQ section */
+.lang-ja .faq-hero {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.lang-ja .faq-hero .faq-intro {
+  flex: 1;
+}
+
