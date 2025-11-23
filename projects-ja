@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>プロジェクト | タミー・トーマス</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="タミー・トーマスのポートフォリオ。ソフトウェア開発、データプライバシー、セキュリティに関するプロジェクトを紹介します。">
+
+  <!-- Two fonts: Montserrat (headings) + Lora (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="index-ja.html">ホーム</a>
+  <a href="about-ja.html">私について</a>
+
+  <div class="nav-dropdown">
+    <a href="projects-ja.html" class="nav-dropbtn active">プロジェクト ▾</a>
+    <div class="nav-dropdown-menu">
+      <a href="projects-ja.html#data-analysis">データ分析</a>
+      <a href="projects-ja.html#web-dev">ウェブ開発</a>
+      <a href="projects-ja.html#school">授業プロジェクト</a>
+      <a href="projects-ja.html#in-progres
