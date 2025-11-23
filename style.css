@@ -439,6 +439,14 @@ blockquote{
   letter-spacing: 0.15em;
 }
 
+/* Japanese-specific typography */
+.lang-ja {
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+
 
 
 
