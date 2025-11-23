@@ -427,6 +427,18 @@ blockquote{
   border-radius: 1rem;
 }
 
+/*for Japanese localization*/
+.jp-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.jp-vertical-heading {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.15em;
+}
+
 
 
 
