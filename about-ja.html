@@ -1,61 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <title>私について | タミー・トーマス</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tammy Thomas is a Computer Science student showcasing portfolio projects in software development, data privacy, and security.">
 
-  <!-- Two fonts: Montserrat (headings) + Lora (body) -->
-
-  <!-- link rel="preconnect" etc -This tells the browser to set up an early connection to Google’s font server before the actual font request happens. It speeds things up slightly. -->
-
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- This is the actual stylesheet request to Google Fonts. It includes:
-
-Lora:
-
-Normal weight 400 
-
-Italic weight 400 
-
-Montserrat:
-
-Bold weight 700 
-
-The &display=swap bit tells the browser to use a fallback font until the Google font loads, then “swap” it in to avoid long blank text rendering. -->
-
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
-  <!-- External stylesheet (required) -->
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-  <a href="index.html" >ホーム</a> 
-  <a href="about.html" class="active">私について</a> 
+  <a href="index-ja.html">ホーム</a> 
+  <a href="about-ja.html" class="active">私について</a>
 
   <div class="nav-dropdown">
-    <a href="projects.html" class="nav-dropbtn">プロジェクト ▾</a>
+    <a href="projects-ja.html" class="nav-dropbtn">プロジェクト ▾</a>
     <div class="nav-dropdown-menu">
-      <a href="projects.html#data-analysis">データ分析</a>
-      <a href="projects.html#web-dev">ウェブ開発</a>
-      <a href="projects.html#school">授業プロジェクト</a>
-      <a href="projects.html#in-progress">進行中</a>
+      <a href="projects-ja.html#data-analysis">データ分析</a>
+      <a href="projects-ja.html#web-dev">ウェブ開発</a>
+      <a href="projects-ja.html#school">授業プロジェクト</a>
+      <a href="projects-ja.html#in-progress">進行中</a>
     </div>
   </div>
-  
-  <a href="contact.html">お問い合わせ</a>
-  
-  <!--Language switcher -->
+
+  <a href="contact-ja.html">お問い合わせ</a>
+
+  <!-- Language switcher -->
   <a href="about.html"><strong>EN</strong></a> | <a href="about-ja.html">日本語</a>
 </nav>
 
+<h1>私について</h1>
 
- <h1>私について</h1>
 <div class="panel">
   <p>
     こんにちは、タミー・トーマスです。私はコンピュータサイエンスを学んでおり、このページでは私の背景や興味について紹介します。
@@ -80,7 +62,6 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
   </p>
 </div>
 
-
 <div class="panel">
   <h2 class="small-caps">スキル</h2>
   <ul>
@@ -94,7 +75,7 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
 <div class="panel">
   <h2 class="small-caps">よくある質問</h2>
 
-  <button class="accordion">どのようなプロジェクトに最もやりがいを感じますか。
+  <button class="accordion">どのようなプロジェクトに最もやりがいを感じますか。</button>
   <div class="accordion-panel">
     <p>問題解決やデータ分析に取り組みながら、明確な目的を持って進められるプロジェクトに特にやりがいを感じます。たとえば、人々のデータがどのように利用されているかを分かりやすく示したり、より良い判断ができるよう支援したりするような取り組みです。</p>
   </div>
@@ -111,7 +92,6 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
 </div>
 
 <script>
-  // Accordion behavior for FAQ (Chapter 12)
   const accordions = document.querySelectorAll(".accordion");
 
   accordions.forEach(function (btn) {
@@ -128,9 +108,4 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
 </script>
 
 </body>
-
 </html>
-
-
-
-
