@@ -465,18 +465,9 @@ blockquote{
   flex: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Navigation tweaks for Japanese pages */
+.lang-ja nav a {
+  padding: 0.3rem 0.5rem;
+  white-space: nowrap;
+}
 
