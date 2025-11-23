@@ -1,30 +1,142 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>プロジェクト | タミー・トーマス</title>
+  <title>Tammy Thomas | Computer Science Portfolio & Projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="タミー・トーマスのポートフォリオ。ソフトウェア開発、データプライバシー、セキュリティに関するプロジェクトを紹介します。">
+  <meta name="description" content="Tammy Thomas is a Computer Science student showcasing portfolio projects in software development, data privacy, and security.">
 
   <!-- Two fonts: Montserrat (headings) + Lora (body) -->
+
+  <!-- link rel="preconnect" etc -This tells the browser to set up an early connection to Google’s font server before the actual font request happens. It speeds things up slightly. -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- This is the actual stylesheet request to Google Fonts. It includes:
+
+Lora:
+
+Normal weight 400 
+
+Italic weight 400 
+
+Montserrat:
+
+Bold weight 700 
+
+The &display=swap bit tells the browser to use a fallback font until the Google font loads, then “swap” it in to avoid long blank text rendering. -->
+
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
+  <!-- External stylesheet (required) -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<!-- Requirement: Use two fonts -->
+
 <nav>
-  <a href="index-ja.html">ホーム</a>
-  <a href="about-ja.html">私について</a>
+  <a href="index.html" >Home</a> 
+  <a href="about.html">About Me</a> 
 
   <div class="nav-dropdown">
-    <a href="projects-ja.html" class="nav-dropbtn active">プロジェクト ▾</a>
+    <a href="projects.html" class="nav-dropbtn" class="active">Projects ▾</a>
     <div class="nav-dropdown-menu">
-      <a href="projects-ja.html#data-analysis">データ分析</a>
-      <a href="projects-ja.html#web-dev">ウェブ開発</a>
-      <a href="projects-ja.html#school">授業プロジェクト</a>
-      <a href="projects-ja.html#in-progres
+      <a href="projects.html#data-analysis">Data Analysis</a>
+      <a href="projects.html#web-dev">Web Development</a>
+      <a href="projects.html#school">Course Projects</a>
+      <a href="projects.html#in-progress">In-Progress</a>
+    </div>
+  </div>
+
+  <a href="contact.html">Contact</a>
+ <!-- Language switcher -->
+  <a href="index.html"><strong>EN</strong></a> | <a href="index-ja.html">日本語</a>
+</nav>
+
+
+<main class="wrap">
+    <h1>Projects</h1>
+    <p class="note-small">
+      <!-- I want a simple gallery that I can fill in later without breaking anything. -->
+      A simple, starter gallery. These are fake projects I've added for examples. I’ll swap placeholders with real screenshots as I finish work.
+    </p>
+
+    <!-- Gallery: super basic grid of cards -->
+    <section class="gallery" aria-label="Project gallery">
+      
+      <!-- Card 1 -->
+      <figure class="card">
+        <div class="thumb placeholder" role="img" aria-label="Placeholder thumbnail for future project">
+          <!-- When I have a real image: replace this div with an <img> like below -->
+          <!-- <img src="images/project-login.jpg" alt="Screenshot of my privacy-first login flow" loading="lazy" width="1200" height="750"> -->
+        </div>
+        <figcaption>
+          <h2 class="card-title">Privacy-First Login Flow</h2>
+          <p class="card-caption">
+  This project focuses on making sign-in screens simple, secure, and welcoming.
+  I wanted to prove that accessibility and usability can go hand-in-hand with good security practices.
+</p>
+
+
+          <p class="card-purpose">Purpose: show usability thinking + accessibility basics.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Card 2 -->
+      <figure class="card">
+        <div class="thumb placeholder" role="img" aria-label="Placeholder thumbnail for future project">
+          <!-- Later: <img src="images/project-responsive.jpg" alt="Mobile view of my responsive layout" loading="lazy" width="1200" height="750"> -->
+        </div>
+        <figcaption>
+          <h2 class="card-title">Responsive Portfolio Layout</h2>
+          <p class="card-caption">
+  A clean, flexible layout that adjusts smoothly between desktop and mobile.
+  I designed this to stay fast, readable, and consistent no matter the screen size.
+</p>
+
+          <p class="card-purpose">Purpose: demonstrate responsive design fundamentals.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Card 3 -->
+      <figure class="card">
+        <div class="thumb placeholder" role="img" aria-label="Placeholder thumbnail for future project">
+          <!-- Later: <img src="images/project-notes-api.jpg" alt="Diagram of my Notes API endpoints" loading="lazy" width="1200" height="750"> -->
+        </div>
+        <figcaption>
+          <h2 class="card-title">Notes API (Java + Spring)</h2>
+          <p class="card-caption">
+  A simple CRUD API for organizing notes, built in Java with Spring Boot.
+  I used this project to strengthen my backend fundamentals and documentation habits.
+</p>
+
+          <p class="card-purpose">Purpose: show backend basics + documentation habit.</p>
+        </figcaption>
+      </figure>
+
+    </section>
+
+    <!-- Optional media I can add fast later -->
+    <!--
+    <section aria-label="Optional intro video" class="note-small">
+      <p>When I’m ready: add a 30–60s intro video here.</p>
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Quick intro to my portfolio"
+          width="560" height="315" allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+      <p class="sr-only">Transcript: Short intro to who I am and what I’m building this term.</p>
+    </section>
+    -->
+
+</body>
+</html>
+
+
+
+
+
