@@ -446,6 +446,15 @@ blockquote{
   letter-spacing: 0.03em;
 }
 
+/* Japanese headings */
+.lang-ja h1,
+.lang-ja h2,
+.lang-ja h3 {
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+
 
 
 
