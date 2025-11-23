@@ -454,6 +454,17 @@ blockquote{
   font-weight: 600;
 }
 
+/* Layout for Japanese About page hero with vertical title */
+.lang-ja .about-hero {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.lang-ja .about-hero .about-intro {
+  flex: 1;
+}
+
 
 
 
