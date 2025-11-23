@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>私について | タミー・トーマス</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tammy Thomas is a Computer Science student showcasing portfolio projects in software development, data privacy, and security.">
+
+  <!-- Two fonts: Montserrat (headings) + Lora (body) -->
+
+  <!-- link rel="preconnect" etc -This tells the browser to set up an early connection to Google’s font server before the actual font request happens. It speeds things up slightly. -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- This is the actual stylesheet request to Google Fonts. It includes:
+
+Lora:
+
+Normal weight 400 
+
+Italic weight 400 
+
+Montserrat:
+
+Bold weight 700 
+
+The &display=swap bit tells the browser to use a fallback font until the Google font loads, then “swap” it in to avoid long blank text rendering. -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet (required) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" >ホーム</a> 
+  <a href="about.html" class="active">私について</a> 
+
+  <div class="nav-dropdown">
+    <a href="projects.html" class="nav-dropbtn">プロジェクト ▾</a>
+    <div class="nav-dropdown-menu">
+      <a href="projects.html#data-analysis">データ分析</a>
+      <a href="projects.html#web-dev">ウェブ開発</a>
+      <a href="projects.html#school">授業プロジェクト</a>
+      <a href="projects.html#in-progress">進行中</a>
+    </div>
+  </div>
+  
+  <a href="contact.html">お問い合わせ</a>
+  
+  <!--Language switcher -->
+  <a href="about.html"><strong>EN</strong></a> | <a href="about-ja.html">日本語</a>
+</nav>
+
+
+ <h1>私について</h1>
+<div class="panel">
+  <p>
+    こんにちは、タミー・トーマスです。私はコンピュータサイエンスを学んでおり、このページでは私の背景や興味について紹介します。
+  </p>
+</div>
+
+<div class="panel">
+  <p>
+    この分野で成長していく中で、新しいツールを試したり、新しいスキルを習得したりすることに大きなやりがいを感じています。これまでに Java、Spring、SQL、Git などを扱ってきましたが、それぞれの技術がどのように連携しているのかを理解していく過程がとても興味深いです。物事を一つずつ丁寧に学び、継続して向上していくことを大切にしています。
+  </p>
+</div>
+
+<div class="panel">
+  <p>
+    テクノロジーは私の人生において大きな役割を占めていますが、それがすべてというわけではありません。勉強をしていないときは、成人した娘や愛犬と過ごしたり、長距離のサイクリングを楽しんだり、レース編みのアクセサリーを作ったりしています。コードでもクラフトでも、さまざまな形で創造的でいることが、私の心のバランスを保ち、日々のインスピレーションにつながっています。
+  </p>
+</div>
+
+<div class="panel">
+  <p>
+    これからも学び続け、さまざまなものを作り、創造し続けていきたいと考えています。私の目標は、学んだ知識や経験を活かして、テクノロジーをより便利で、安全で、そして誰にとっても分かりやすいものにしていくことです。
+  </p>
+</div>
+
+
+<div class="panel">
+  <h2 class="small-caps">スキル</h2>
+  <ul>
+    <li>Java</li>
+    <li>Spring</li>
+    <li>SQL</li>
+    <li>Git</li>
+  </ul>
+</div>
+
+<div class="panel">
+  <h2 class="small-caps">よくある質問</h2>
+
+  <button class="accordion">どのようなプロジェクトに最もやりがいを感じますか。
+  <div class="accordion-panel">
+    <p>問題解決やデータ分析に取り組みながら、明確な目的を持って進められるプロジェクトに特にやりがいを感じます。たとえば、人々のデータがどのように利用されているかを分かりやすく示したり、より良い判断ができるよう支援したりするような取り組みです。</p>
+  </div>
+
+  <button class="accordion">フリーランスのご依頼やコラボレーションにも対応していますか。</button>
+  <div class="accordion-panel">
+    <p>はい、現在は学生ですが、小規模なコラボレーションには前向きに取り組んでいます。特に、データ分析やデータプライバシーに関する学習の機会につながるものであれば、積極的に参加したいと考えています。</p>
+  </div>
+
+  <button class="accordion">現在、どのようなツールやプログラミング言語に重点を置いて学習していますか。</button>
+  <div class="accordion-panel">
+    <p>現在は、Java、Spring、SQL、HTML、CSS、そして少しの JavaScript を用いて開発を行っています。また、バージョン管理には Git および GitHub を活用しています。</p>
+  </div>
+</div>
+
+<script>
+  // Accordion behavior for FAQ (Chapter 12)
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+
+</body>
+
+</html>
+
+
+
+
