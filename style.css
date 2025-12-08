@@ -493,3 +493,12 @@ blockquote{
   flex: 1;
 }
 
+.thumb video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+
