@@ -59,64 +59,81 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
 <main class="wrap">
     <h1>Projects</h1>
     <p class="note-small">
-      <!-- I want a simple gallery that I can fill in later without breaking anything. -->
-      A simple, starter gallery. These are fake projects I've added for examples. I’ll swap placeholders with real screenshots as I finish work.
-    </p>
+  A simple starter gallery of projects based on my real data. I’ll keep updating
+  screenshots and details as these analyses grow.
+</p>
+
 
     <!-- Gallery: super basic grid of cards -->
     <section class="gallery" aria-label="Project gallery">
-      
-      <!-- Card 1 -->
-      <figure class="card">
-        <div class="thumb placeholder" role="img" aria-label="Placeholder thumbnail for future project">
-          <!-- When I have a real image: replace this div with an <img> like below -->
-          <!-- <img src="images/project-login.jpg" alt="Screenshot of my privacy-first login flow" loading="lazy" width="1200" height="750"> -->
-        </div>
-        <figcaption>
-          <h2 class="card-title">Privacy-First Login Flow</h2>
-          <p class="card-caption">
-  This project focuses on making sign-in screens simple, secure, and welcoming.
-  I wanted to prove that accessibility and usability can go hand-in-hand with good security practices.
-</p>
+  <!-- Card 1: Uber Dashboard -->
+  <figure class="card">
+    <div class="thumb placeholder" role="img" aria-label="Animated preview of Uber earnings dashboard">
+      <!-- Later: replace with an animated GIF or screenshot -->
+      <!-- Example:
+      <img src="images/uber-dashboard.gif"
+           alt="Animated GIF of my Uber earnings and cost-per-mile dashboard"
+           loading="lazy" width="1200" height="750">
+      -->
+    </div>
+    <figcaption>
+      <h2 class="card-title">Uber Earnings & Cost-Per-Mile Dashboard</h2>
+      <p class="card-caption">
+        I use my real Uber driving data (gross earnings, fees, mileage, and fixed costs)
+        to calculate my true profit per trip, per mile, and per hour. I clean and combine
+        monthly reports, then build charts to compare earnings by month and day of week.
+      </p>
+      <p class="card-purpose">
+        Purpose: demonstrate real-world financial analysis, data cleaning, and dashboard design.
+      </p>
+    </figcaption>
+  </figure>
 
+  <!-- Card 2: Calorie & Exercise Tracker -->
+  <figure class="card">
+    <div class="thumb placeholder" role="img" aria-label="Animated preview of calorie and exercise trends">
+      <!-- Later:
+      <img src="images/calorie-exercise.gif"
+           alt="Animated GIF of my calorie and exercise net balance charts"
+           loading="lazy" width="1200" height="750">
+      -->
+    </div>
+    <figcaption>
+      <h2 class="card-title">Calorie & Exercise Net Balance Tracker</h2>
+      <p class="card-caption">
+        This project brings together my food log and exercise log to track net calories
+        per day. I calculate how much exercise offsets intake, visualize “over target”
+        vs “under target” days, and explore weekly patterns that affect my energy and goals.
+      </p>
+      <p class="card-purpose">
+        Purpose: show metric design, joining multiple data sources, and clear health-focused visualizations.
+      </p>
+    </figcaption>
+  </figure>
 
-          <p class="card-purpose">Purpose: show usability thinking + accessibility basics.</p>
-        </figcaption>
-      </figure>
+  <!-- Card 3: Time-Use & Productivity -->
+  <figure class="card">
+    <div class="thumb placeholder" role="img" aria-label="Animated preview of time-use charts">
+      <!-- Later:
+      <img src="images/time-use.gif"
+           alt="Animated GIF of my weekly time-use and productivity charts"
+           loading="lazy" width="1200" height="750">
+      -->
+    </div>
+    <figcaption>
+      <h2 class="card-title">Daily Routine & Productivity Time-Use Analysis</h2>
+      <p class="card-caption">
+        I combine my logs for studying, cleaning, exercise, and other activities into a single
+        time-use dataset. From there, I analyze how my weekly routine shifts during busy school
+        weeks and visualize where my time actually goes.
+      </p>
+      <p class="card-purpose">
+        Purpose: highlight data integration, aggregation, and storytelling with time-series data.
+      </p>
+    </figcaption>
+  </figure>
+</section>
 
-      <!-- Card 2 -->
-      <figure class="card">
-        <div class="thumb placeholder" role="img" aria-label="Placeholder thumbnail for future project">
-          <!-- Later: <img src="images/project-responsive.jpg" alt="Mobile view of my responsive layout" loading="lazy" width="1200" height="750"> -->
-        </div>
-        <figcaption>
-          <h2 class="card-title">Responsive Portfolio Layout</h2>
-          <p class="card-caption">
-  A clean, flexible layout that adjusts smoothly between desktop and mobile.
-  I designed this to stay fast, readable, and consistent no matter the screen size.
-</p>
-
-          <p class="card-purpose">Purpose: demonstrate responsive design fundamentals.</p>
-        </figcaption>
-      </figure>
-
-      <!-- Card 3 -->
-      <figure class="card">
-        <div class="thumb placeholder" role="img" aria-label="Placeholder thumbnail for future project">
-          <!-- Later: <img src="images/project-notes-api.jpg" alt="Diagram of my Notes API endpoints" loading="lazy" width="1200" height="750"> -->
-        </div>
-        <figcaption>
-          <h2 class="card-title">Notes API (Java + Spring)</h2>
-          <p class="card-caption">
-  A simple CRUD API for organizing notes, built in Java with Spring Boot.
-  I used this project to strengthen my backend fundamentals and documentation habits.
-</p>
-
-          <p class="card-purpose">Purpose: show backend basics + documentation habit.</p>
-        </figcaption>
-      </figure>
-
-    </section>
 
     <!-- Optional media I can add fast later -->
     <!--
@@ -135,6 +152,7 @@ The &display=swap bit tells the browser to use a fallback font until the Google 
 
 </body>
 </html>
+
 
 
 
